@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension String {
+public extension String {
     /**
         Trims trailing whitespace and newlines.
 

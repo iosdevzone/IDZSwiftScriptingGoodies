@@ -20,12 +20,20 @@ class IDZSwiftScriptingGoodiesTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
+// MARK: - String
     func testTrim() {
         let input = "abc\n\n"
         let expect = "abc"
         let output = input.trim()
         XCTAssertEqual(output, expect)
+    }
+    
+// MARK: - Task
+    func testRunShellCommand() {
+        let (status, output, error) = runShellCommand("/bin/echo Hello, World!")
+        XCTAssertEqual(status, 0)
+        XCTAssertEqual(output!.trim(), "Hello, World!")
+        XCTAssertEqual(error!.trim(), "")
     }
     
 }
