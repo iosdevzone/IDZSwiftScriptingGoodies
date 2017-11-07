@@ -7,12 +7,13 @@
     <meta charset='utf-8'>
     <script src="js/jquery.min.js" defer></script>
     <script src="js/jazzy.js" defer></script>
+    
   </head>
   <body>
     <a title="Functions  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (100% documented)</p>
+        <p><a href="index.html"> Docs</a> (47% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -26,7 +27,7 @@
       <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
-          <a href="Extensions.html">Extensions</a>
+            <a href="Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="Extensions/String.html">String</a>
@@ -34,16 +35,19 @@
             </ul>
           </li>
           <li class="nav-group-name">
-          <a href="Functions.html">Functions</a>
+            <a href="Functions.html">Functions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Functions.html#/s:F24IDZSwiftScriptingGoodies10fileExistsFSSSb">fileExists(_:)</a>
+                <a href="Functions.html#/s:24IDZSwiftScriptingGoodies10fileExistsSbSS0D4Path_tF">fileExists(filePath:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="Functions.html#/s:F24IDZSwiftScriptingGoodies5mkdirFSSSb">mkdir(_:)</a>
+                <a href="Functions.html#/s:24IDZSwiftScriptingGoodies5mkdirSbSS4path_tF">mkdir(path:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="Functions.html#/s:F24IDZSwiftScriptingGoodies15runShellCommandFSSTSiGSqSS_GSqSS__">runShellCommand(_:)</a>
+                <a href="Functions.html#/s:24IDZSwiftScriptingGoodies4pathSSSgSSAB_SS10relativeTotF">path(path:relativeTo:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:24IDZSwiftScriptingGoodies15runShellCommandSi_SSSgACtSS7command_tF">runShellCommand(command:)</a>
               </li>
             </ul>
           </li>
@@ -62,9 +66,112 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:F24IDZSwiftScriptingGoodies15runShellCommandFSSTSiGSqSS_GSqSS__"></a>
-                    <a name="//apple_ref/swift/Function/runShellCommand(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:F24IDZSwiftScriptingGoodies15runShellCommandFSSTSiGSqSS_GSqSS__">runShellCommand(_:)</a>
+                    <a name="/s:24IDZSwiftScriptingGoodies10fileExistsSbSS0D4Path_tF"></a>
+                    <a name="//apple_ref/swift/Function/fileExists(filePath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:24IDZSwiftScriptingGoodies10fileExistsSbSS0D4Path_tF">fileExists(filePath:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tests if a file or directory exists at a given path</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">fileExists</span><span class="p">(</span><span class="nv">filePath</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>true if a file exist at <code>path</code></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:24IDZSwiftScriptingGoodies5mkdirSbSS4path_tF"></a>
+                    <a name="//apple_ref/swift/Function/mkdir(path:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:24IDZSwiftScriptingGoodies5mkdirSbSS4path_tF">mkdir(path:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a directory (and any needed intermediates) at a path.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">mkdir</span><span class="p">(</span><span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>true if successful, false otherwise.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:24IDZSwiftScriptingGoodies4pathSSSgSSAB_SS10relativeTotF"></a>
+                    <a name="//apple_ref/swift/Function/path(path:relativeTo:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:24IDZSwiftScriptingGoodies4pathSSSgSSAB_SS10relativeTotF">path(path:relativeTo:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calculates the replative path from a base path to a traget path.
+-parameter path: the target path.
+-parameter relativeTo: the basePath</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">path</span><span class="p">(</span><span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">relativeTo</span> <span class="nv">basePath</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>the relative path.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:24IDZSwiftScriptingGoodies15runShellCommandSi_SSSgACtSS7command_tF"></a>
+                    <a name="//apple_ref/swift/Function/runShellCommand(command:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:24IDZSwiftScriptingGoodies15runShellCommandSi_SSSgACtSS7command_tF">runShellCommand(command:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -78,144 +185,15 @@ This is synchronous function.</p>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
-                        <div class="Swift">
+                        <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">runShellCommand</span><span class="p">(</span><span class="nv">command</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt">Int</span><span class="p">,</span> <span class="kt">String</span><span class="p">?,</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
 
                         </div>
                       </div>
                       <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>command</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>the shell command, e.g. <code>/bin/ls -l</code></p>
-
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
                         <h4>Return Value</h4>
                         <p>a tuple containing the exit status, standard output and standard error.</p>
-
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:F24IDZSwiftScriptingGoodies10fileExistsFSSSb"></a>
-                    <a name="//apple_ref/swift/Function/fileExists(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:F24IDZSwiftScriptingGoodies10fileExistsFSSSb">fileExists(_:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Tests if a file or directory exists at a given path</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="Swift">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">fileExists</span><span class="p">(</span><span class="nv">filePath</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>filePath</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>the file path</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>true if a file exist at <code>path</code></p>
-
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:F24IDZSwiftScriptingGoodies5mkdirFSSSb"></a>
-                    <a name="//apple_ref/swift/Function/mkdir(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:F24IDZSwiftScriptingGoodies5mkdirFSSSb">mkdir(_:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Creates a directory (and any needed intermediates) at a path.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="Swift">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">mkdir</span><span class="p">(</span><span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>path</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>the path of the directory to be created</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>true if successful, false otherwise.</p>
-
                       </div>
                     </section>
                   </div>
@@ -225,8 +203,8 @@ This is synchronous function.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2015 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2015-11-14)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.3.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-11-06)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

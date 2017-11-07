@@ -1,0 +1,68 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/danny/Documents/GitHub/IDZSwiftScriptingGoodies/Sources/IDZSwiftScriptingGoodies/String.swift",
+      "line": 45,
+      "symbol": "String.CSI(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/danny/Documents/GitHub/IDZSwiftScriptingGoodies/Sources/IDZSwiftScriptingGoodies/String.swift",
+      "line": 46,
+      "symbol": "String.black",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/danny/Documents/GitHub/IDZSwiftScriptingGoodies/Sources/IDZSwiftScriptingGoodies/String.swift",
+      "line": 47,
+      "symbol": "String.red",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/danny/Documents/GitHub/IDZSwiftScriptingGoodies/Sources/IDZSwiftScriptingGoodies/String.swift",
+      "line": 48,
+      "symbol": "String.green",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/danny/Documents/GitHub/IDZSwiftScriptingGoodies/Sources/IDZSwiftScriptingGoodies/String.swift",
+      "line": 49,
+      "symbol": "String.yellow",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/danny/Documents/GitHub/IDZSwiftScriptingGoodies/Sources/IDZSwiftScriptingGoodies/String.swift",
+      "line": 50,
+      "symbol": "String.blue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/danny/Documents/GitHub/IDZSwiftScriptingGoodies/Sources/IDZSwiftScriptingGoodies/String.swift",
+      "line": 51,
+      "symbol": "String.magenta",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/danny/Documents/GitHub/IDZSwiftScriptingGoodies/Sources/IDZSwiftScriptingGoodies/String.swift",
+      "line": 52,
+      "symbol": "String.cyan",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/danny/Documents/GitHub/IDZSwiftScriptingGoodies/Sources/IDZSwiftScriptingGoodies/String.swift",
+      "line": 53,
+      "symbol": "String.white",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/danny/Documents/GitHub/IDZSwiftScriptingGoodies"
+}
