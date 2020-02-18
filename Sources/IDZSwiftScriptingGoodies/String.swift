@@ -28,27 +28,27 @@ public extension String {
 
         - returns: the trimmed string.
     */
-    public func trim() -> String {
+    func trim() -> String {
         return self.trimmingCharacters(in: .whitespacesAndNewlines)
     }
     /**
-     Splits a string into components delimited by a spcific character
+     Splits a string into components delimited by a specific character
      - parameter c: the delimiter character.
      - returns: the string components.
      */
-    public func split(c: Character) -> [String] {
+    func split(c: Character) -> [String] {
         return self.split { $0 == c }.map(String.init)
     }
 }
 
 public extension String {
-    public func CSI(_ code: String) -> String { return "\u{001b}[" + code }
-    public var black: String { return CSI("30m") + self + CSI("0m") }
-    public var red: String { return CSI("31m") + self + CSI("0m") }
-    public var green: String { return CSI("32m") + self + CSI("0m") }
-    public var yellow: String { return CSI("33m") + self + CSI("0m") }
-    public var blue: String { return CSI("34m") + self + CSI("0m") }
-    public var magenta: String { return CSI("35m") + self + CSI("0m") }
-    public var cyan: String { return CSI("36m") + self + CSI("0m") }
-    public var white: String { return CSI("37m") + self + CSI("0m") }
+    func CSI(_ code: String) -> String { return "\u{001b}[" + code }
+    var black: String { return CSI("30m") + self + CSI("0m") }
+    var red: String { return CSI("31m") + self + CSI("0m") }
+    var green: String { return CSI("32m") + self + CSI("0m") }
+    var yellow: String { return CSI("33m") + self + CSI("0m") }
+    var blue: String { return CSI("34m") + self + CSI("0m") }
+    var magenta: String { return CSI("35m") + self + CSI("0m") }
+    var cyan: String { return CSI("36m") + self + CSI("0m") }
+    var white: String { return CSI("37m") + self + CSI("0m") }
 }

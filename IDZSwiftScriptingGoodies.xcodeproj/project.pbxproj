@@ -48,7 +48,7 @@
 
 /* Begin PBXFileReference section */
 		"IDZSwiftScriptingGoodies::IDZSwiftScriptingGoodies::Product" /* IDZSwiftScriptingGoodies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IDZSwiftScriptingGoodies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"IDZSwiftScriptingGoodies::IDZSwiftScriptingGoodiesTests::Product" /* IDZSwiftScriptingGoodiesTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = IDZSwiftScriptingGoodiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"IDZSwiftScriptingGoodies::IDZSwiftScriptingGoodiesTests::Product" /* IDZSwiftScriptingGoodiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = IDZSwiftScriptingGoodiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		OBJ_11 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		OBJ_14 /* IDZSwiftScriptingGoodiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDZSwiftScriptingGoodiesTests.swift; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -113,7 +113,6 @@
 				OBJ_16 /* build */,
 				OBJ_17 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -192,15 +191,24 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					"IDZSwiftScriptingGoodies::IDZSwiftScriptingGoodies" = {
+						LastSwiftMigration = 1130;
+					};
+					"IDZSwiftScriptingGoodies::IDZSwiftScriptingGoodiesTests" = {
+						LastSwiftMigration = 1130;
+					};
+				};
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "IDZSwiftScriptingGoodies" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_17 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -287,7 +295,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGET_NAME = IDZSwiftScriptingGoodiesTests;
 			};
 			name = Debug;
@@ -305,7 +313,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGET_NAME = IDZSwiftScriptingGoodiesTests;
 			};
 			name = Release;
@@ -349,7 +357,7 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGET_NAME = IDZSwiftScriptingGoodies;
 			};
 			name = Debug;
@@ -371,7 +379,7 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGET_NAME = IDZSwiftScriptingGoodies;
 			};
 			name = Release;

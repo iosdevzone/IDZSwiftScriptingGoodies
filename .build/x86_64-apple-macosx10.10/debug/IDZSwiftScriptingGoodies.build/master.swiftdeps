@@ -1,7 +1,0 @@
-version: "Apple Swift version 4.0.2 (swiftlang-900.0.69.2 clang-900.0.38)"
-options: "8429c41056a69d5542b9ce834251d968"
-build_time: [1510018918, 697461000]
-inputs:
-  "/Users/danny/Documents/GitHub/IDZSwiftScriptingGoodies/Sources/IDZSwiftScriptingGoodies/File.swift": !dirty [1447536774, 0]
-  "/Users/danny/Documents/GitHub/IDZSwiftScriptingGoodies/Sources/IDZSwiftScriptingGoodies/String.swift": !dirty [1447713276, 0]
-  "/Users/danny/Documents/GitHub/IDZSwiftScriptingGoodies/Sources/IDZSwiftScriptingGoodies/Task.swift": !dirty [1447535907, 0]
